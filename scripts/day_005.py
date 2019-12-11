@@ -66,10 +66,10 @@ def intcode(program, input_id):
 
         opcode, modes = parse_instruction(program[pointer])
 
-    return outputs
+    return outputs, program
 
 def test(program, input_id):
-    outputs = intcode(program, input_id)
+    outputs = intcode(program, input_id)[0]
     tested = outputs[1:-1]
 
     if tested == [int(i) for i in '0' * len(tested)]:
@@ -80,17 +80,19 @@ def test(program, input_id):
     return outputs[-1]
         
 
-script_path = os.path.dirname(__file__)
-input_file = os.path.relpath('..//input//005.txt', script_path)
+if __name__ == "__main__":
 
-with open(input_file, 'r') as f:
-    program = f.read()
+    script_path = os.path.dirname(__file__)
+    input_file = os.path.relpath('..//input//005.txt', script_path)
 
-program = [int(i) for i in program.split(',')]
+    with open(input_file, 'r') as f:
+        program = f.read()
 
-# task 1
-print(test(program[:], 1))
+    program = [int(i) for i in program.split(',')]
 
-# task 3
-print(test(program[:], 5))
+    # task 1
+    print(test(program[:], 1))
+
+    # task 3
+    print(test(program[:], 5))
 
