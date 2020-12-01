@@ -3,7 +3,7 @@
 ## Calendars
 
 - [2019](https://adventofcode.com/2019)
-- [2020](https://adventofcode.com/2020) - will be available Dec 1
+- [2020](https://adventofcode.com/2020)
 
 ## Solutions
 
