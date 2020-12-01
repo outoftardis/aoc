@@ -1,6 +1,6 @@
 # Advent of Code 2020
- 
-- [Auxiliary scripts](aoc_help.py)
+
+- [Auxiliary scripts](./scripts/aoc_help.py)
 
 To read input for Day N, substitute `%Day N input file%` with the name of the txt file in the [input](./input) folder (without extension):
 
