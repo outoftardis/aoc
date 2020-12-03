@@ -12,3 +12,5 @@ day_input = aoc.get_input('%Day N input file%')
 ## Solutions
 
 - **Day 1:** Report Repair [solution](./scripts/001.py) | [task](https://adventofcode.com/2020/day/1) | [input](./input/001.txt)
+- **Day 2:** Password Philosophy [solution](./scripts/002.py) | [task](https://adventofcode.com/2020/day/2) | [input](./input/002.txt)
+- **Day 3:** Toboggan Trajectory [solution](./scripts/003.py) | [task](https://adventofcode.com/2020/day/3) | [input](./input/003.txt)
